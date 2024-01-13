@@ -1,0 +1,92 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 240px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.header_title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.section_description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.header_text {
+    max-width: 860px;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.main_btn {
+    color: #FFF;
+    text-align: center;
+    font-size:1.25rem;
+    font-weight: 600;
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+.banner{
+    margin: 50px 100px;
+    height: 100%;
+}
+.team_features{
+    display: flex;
+    margin: 50px 100px;
+}
+.team_pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+@media screen and (max-width : 576px) {
+
+    nav {
+    flex-direction: column;
+    margin: 10px 20px;
+    }
+    nav>ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner{
+       width: 100%;
+    }
+    .header_title {
+        font-size: 3rem;
+    }
+}
